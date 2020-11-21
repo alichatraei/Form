@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فرم</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body class="mt-5">
+    <main class="container py-3">
+      <!-- Header Title -->
+      <nav class="row text-center mt-4">
+        <div class="col">
+          <h3>فرم ثبت نام</h3>
+          <p class="lead pt-2">
+            این یک فرم آماده ثبت نام با قابلیت اعتبار سنجی است
+          </p>
+          <hr class="mb-3" />
+        </div>
+      </nav>
+      <!-- Form -->
+      <nav class="text-right">
+        <form id="signUpForm" action="#">
+          <div class="row">
+            <div class="col-md-4">
+              <label for="Name">نام</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="علی"
+                data-value="0"
+              />
+            </div>
+            <div class="col-md-4">
+              <label for="lName">نام خانوادگی</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lName"
+                placeholder="چترایی"
+                data-value="0"
+              />
+            </div>
+            <div class="col-md-4">
+              <label for="email">پست الکترونیکی (ایمیل)</label>
+              <input
+                id="email"
+                class="form-control text-left"
+                placeholder="avida.chatraee2001@gmail.com"
+                data-value="0"
+              />
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-md-4">
+              <label for="password">رمز عبور</label>
+              <input
+                id="password"
+                type="text"
+                class="form-control text-left"
+                placeholder="@1234Aa"
+                data-value="0"
+              />
+            </div>
+
+            <div class="col-md-4">
+              <label for="rePassword">تکرار مجدد رمز عبور</label>
+              <input
+                id="rePassword"
+                type="text"
+                class="form-control text-left"
+                placeholder="@1234Aa"
+                data-value="0"
+              />
+            </div>
+            <div class="col-md-4">
+              <label for="sex">جنسیت</label>
+              <div class="form-group mt-2" style="display: flex">
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    name="sexRadios"
+                    class="form-check-input"
+                    id="sexMale"
+                    checked
+                  />
+                  <label for="sexMale" class="pr-3">مرد</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    name="sexRadios"
+                    class="form-check-input"
+                    id="sexFemale"
+                  />
+                  <label for="sexFemale" class="pr-3">زن</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3 text-center">
+            <div class="col-md-12">
+              <button id="signUp" type="submit" class="btn btn-primary btn-lg">
+                ثبت نام
+              </button>
+              <button id="resetBtn" class="btn btn-info btn-lg mr-3">
+                بارگذاری مجدد
+              </button>
+            </div>
+          </div>
+        </form>
+      </nav>
+    </main>
+    <script src="js/j-query.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/SignUp.js"></script>
+  </body>
+</html>

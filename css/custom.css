@@ -1,0 +1,34 @@
+html,
+body {
+  direction: rtl;
+  font-family: "vazir";
+  background-color: #eeeded;
+  vertical-align: middle;
+}
+@font-face {
+  font-family: "vazir";
+  src: url("../font/Vazir.woff");
+}
+main {
+  background-color: #f4f4f2;
+  border: 0.1rem solid #d2d3c9;
+  border-radius: 1rem;
+}
+@media (min-width: 1200px) {
+  #SignIn {
+    max-width: 500px;
+  }
+}
+@media (min-width: 920px) {
+  #SignIn {
+    max-width: 500px;
+  }
+}
+@media (min-width: 720px){
+  #SignIn {
+    max-width: 500px;
+  }
+} #SignUp {
+  color: #212529;
+  text-decoration: none;
+}
